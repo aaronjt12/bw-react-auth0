@@ -10,7 +10,8 @@ ReactDOM.render(
   <Auth0Provider
     domain={domain}
     clientId={clientId}
-    redirectUri={window.location.origin}>
+    redirectUri="https://www.bootwatcher.com" // Hardcode to your deployed URL
+  >
     <App />
   </Auth0Provider>,
   document.getElementById('root')
